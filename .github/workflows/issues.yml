@@ -8,6 +8,7 @@ jobs:
   summarize_issue:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Create file
         run: |
           echo hello > hello.txt
