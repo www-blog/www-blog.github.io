@@ -15,6 +15,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
-            This issue is available for anyone to work on.
+            ${{github.event.issue.title}}
+            ${{github.event.issue.body}}
             **Make sure to reference this issue in your pull request.**
             :sparkles: Thank you for your contribution! :sparkles:
